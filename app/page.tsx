@@ -30,21 +30,18 @@ export default function Home() {
           </h1>
           <p className="text-muted text-base">
             Personal blog by{" "}
-            <a
-              href="https://github.com"
-              className="text-accent hover:underline transition-colors"
-            >
-              Your Name
-            </a>
+            <span className="text-foreground font-medium">
+              Omar Abu Ammouneh
+            </span>
             .{" "}
             I explain things with words and code.
           </p>
-          <nav className="mt-6 flex gap-4 text-sm">
+          <nav className="mt-8 flex gap-6">
             <a
               href="/quotes"
-              className="text-muted hover:text-accent transition-colors"
+              className="text-base font-semibold text-accent hover:underline transition-colors"
             >
-              Quotes
+              Quotes →
             </a>
           </nav>
         </header>

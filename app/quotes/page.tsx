@@ -46,13 +46,13 @@ export default function Quotes() {
         </header>
 
         {/* Quotes List */}
-        <div className="space-y-8">
+        <div className="space-y-12">
           {quotes.map((quote, index) => (
-            <div key={index} className="py-4">
-              <p className="text-foreground text-lg leading-relaxed mb-2">
+            <div key={index} className="py-6 border-l-4 border-accent pl-6">
+              <p className="text-foreground text-2xl leading-relaxed mb-4 font-medium">
                 "{quote.text}"
               </p>
-              <p className="text-muted text-sm">
+              <p className="text-muted text-base">
                 — {quote.author}
               </p>
             </div>
