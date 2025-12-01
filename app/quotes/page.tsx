@@ -46,13 +46,13 @@ export default function Quotes() {
         </header>
 
         {/* Quotes List */}
-        <div className="space-y-12">
+        <div className="space-y-8">
           {quotes.map((quote, index) => (
-            <div key={index} className="py-6 border-l-4 border-accent pl-6">
-              <p className="text-foreground text-2xl leading-relaxed mb-4 font-medium">
+            <div key={index} className="py-4">
+              <p className="text-foreground text-lg leading-relaxed mb-2">
                 "{quote.text}"
               </p>
-              <p className="text-muted text-base">
+              <p className="text-muted text-sm">
                 — {quote.author}
               </p>
             </div>
@@ -62,14 +62,14 @@ export default function Quotes() {
         {/* Footer */}
         <footer className="mt-20 pt-8 border-t border-border">
           <div className="flex gap-6 text-sm mb-4">
+            {/*<a*/}
+            {/*  href="https://twitter.com"*/}
+            {/*  className="text-muted hover:text-accent transition-colors"*/}
+            {/*>*/}
+            {/*  Twitter*/}
+            {/*</a>*/}
             <a
-              href="https://twitter.com"
-              className="text-muted hover:text-accent transition-colors"
-            >
-              Twitter
-            </a>
-            <a
-              href="https://github.com"
+              href="https://github.com/OmarAbuAmmouneh"
               className="text-muted hover:text-accent transition-colors"
             >
               GitHub
